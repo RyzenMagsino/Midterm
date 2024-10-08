@@ -1,0 +1,133 @@
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden; 
+}
+/* Prevent horizontal scrolling */
+
+
+
+
+/*carousel to move*/
+.carousel {
+  max-width: 100%; /* Make sure carousel does not exceed container width */
+}
+
+.carousel-inners img {
+  max-height: 500px; /* Adjust the max height */
+  object-fit: contain; /* Ensures the image fits within the set height */
+}
+
+.carousel-inner img {
+    width: 100%; 
+    height: 1000%;
+    object-fit: cover; 
+
+}
+
+#carouselExampleDark {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+.nav-link {
+  color: #ffffff; /* Default link color */
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth transition */
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Change color on hover */
+  border-bottom: 2px solid #ffc107; /* Underline effect on hover */
+}
+
+
+
+#about{
+    padding-left: 500px;
+    padding-top: 20px;
+}
+
+.fixed-card {
+  width: 350px; /* Adjusted fixed width */
+  height: 450px; /* Adjusted fixed height */
+  overflow: hidden; /* Ensures that overflow content is hidden */
+  margin: 10px; /* Optional: Adds spacing around each card */
+}
+
+.card-img-top {
+  height: 220px; /* Adjusted fixed height for the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%; /* Ensures the image takes the full width of the card */
+}
+
+@media (max-width: 768px) {
+  .row.align-items-center {
+      margin-top: 80px; /* Adjust based on your navbar height */
+      padding-top: 50px; /* Add padding so the content is not hidden */
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .btn-danger {
+      font-size: 1rem; /* Adjust button size for smaller screens */
+  }
+}
+
+.whitebox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1E3E62;
+  text-align: center;
+  padding: 10px;
+}
+
+.checked {
+  color: rgb(255, 187, 0);
+}
+
+.card-img-round {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* make card enlarge on hover*/
+#featured .card {
+  transition: transform 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+#featured .card:hover {
+  transform: scale(1.1); /* Increase the scale factor for enlargement */
+}
+
+#gallery .card {
+  transition: transform 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+#gallery .card:hover {
+  transform: scale(1.1); /* Increase the scale factor for enlargement */
+}
+
+#product .card {
+  transition: transform 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+#product .card:hover {
+  transform: scale(1.1); /* Increase the scale factor for enlargement */
+}
+
+#test .card {
+  transition: transform 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+#test .card:hover {
+  transform: scale(1.1); /* Increase the scale factor for enlargement */
+}
+/* make card enlarge on hover*/
